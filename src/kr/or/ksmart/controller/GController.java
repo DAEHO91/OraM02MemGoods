@@ -16,7 +16,7 @@ import kr.or.ksmart.action.GUpdateFormAction;
 import kr.or.ksmart.action.GUpdateProAction;
 import kr.or.ksmart.forward.GActionForward;
 
-@WebServlet("/GController")
+@WebServlet("*.goods")
 public class GController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -87,8 +87,15 @@ public class GController extends HttpServlet {
 				e.printStackTrace();
 			}
 		
-		
+	
+			// 삭제 화면으로 이동
+		} else if(command.equals("/Gdel/g_delete_form.goods")) {
+			System.out.println("07_06 /Gdel/g_delete_form.goods 조건문실행 MController ----------");
+			forward = new GActionForward();
+			forward.setRedirect(false);
+			forward.setPath("/gdelete/g_delete_pro.jsp");
 		}
+		
 				
 		if(forward != null){
 			if(forward.isRedirect()){

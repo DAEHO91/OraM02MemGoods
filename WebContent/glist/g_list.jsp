@@ -44,7 +44,7 @@ for(int i=0; i<get_alm.size(); i++) {
 		<td><%= g.getG_date() %></td>
 	<%if(session.getAttribute("S_ID").equals(g.getG_id())) { %>
 		<td><a href="<%=request.getContextPath()%>/Gup/g_update_form.goods?send_code=<%= g.getG_code() %>">수정</a></td>
-		<td><a href="<%=request.getContextPath()%>/Gdel/g_delete_pro.gksmart?send_code=<%= g.getG_code() %>">삭제</a></td>
+		<td><a href="<%=request.getContextPath()%>/Gdel/g_delete_form.goods?send_code=<%= g.getG_code() %>">삭제</a></td>
 	<%} else { %>
 		<td>권한없음</td>
 		<td>권한없음</td>

@@ -18,7 +18,14 @@
 <tr>
 <tr>
 	<td>분류</td>
-	<td><input type="text" name="g_cate" size="20"></td>
+	<td>
+		<select name="g_cate">
+			<option value="op1">가전</option>
+			<option value="op2">전자</option>
+			<option value="op3">식품</option>
+			<option value="op4">의류</option>
+		</select>
+	</td>
 <tr>
 <tr>
 	<td>상세</td>

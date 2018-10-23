@@ -21,10 +21,6 @@
 	<td><input type="text" name="ora_pw" size="20"></td>
 <tr>
 <tr>
-	<td>권한</td>
-	<td><input type="text" name="ora_level" size="20"></td>
-<tr>
-<tr>
 	<td>이름</td>
 	<td><input type="text" name="ora_name" size="20"></td>
 <tr>
@@ -33,6 +29,7 @@
 	<td><input type="text" name="ora_email" size="20"></td>
 <tr>
 <tr>
+	<input type="hidden" name="ora_level" size="20" value="사용자">
 	<td colspan="4"><input type="submit" value="회원가입버튼"></td>
 </tr>
 </table>

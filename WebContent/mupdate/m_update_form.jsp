@@ -26,10 +26,6 @@ Member m = (Member)request.getAttribute("mUpdateForm");
 				<td><input type="password" name="ora_pw" size="20" value="<%= m.getOra_pw() %>"></td>
 			<tr>
 			<tr>
-				<td>권한</td>
-				<td><input type="text" name="ora_level" size="20" value="<%= m.getOra_level() %>"></td>
-			<tr>
-			<tr>
 				<td>이름</td>
 				<td><input type="text" name="ora_name" size="20" value="<%= m.getOra_name() %>"></td>
 			<tr>
@@ -38,6 +34,7 @@ Member m = (Member)request.getAttribute("mUpdateForm");
 				<td><input type="text" name="ora_email" size="20" value="<%= m.getOra_email() %>"></td>
 			<tr>
 			<tr>
+				<input type="hidden" name="ora_level" size="20" value="<%= m.getOra_level() %>"> <!-- 권한 -->
 				<td colspan="4"><input type="submit" value="회원수정버튼"></td>
 			</tr>
 		</table>
